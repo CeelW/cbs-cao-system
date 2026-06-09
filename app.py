@@ -9,9 +9,9 @@ st.title("📋 CBS Automotive CAO & HR System")
 if "role" not in st.session_state:
     password = st.text_input("Enter password (admin = full access, employee = view only)", type="password")
     if st.button("Login"):
-        if password == "admin2026":          # CHANGE THIS PASSWORD
+        if password == "admin":          # CHANGE THIS PASSWORD
             st.session_state.role = "admin"
-        elif password == "employee2026":     # CHANGE THIS PASSWORD
+        elif password == "employee":     # CHANGE THIS PASSWORD
             st.session_state.role = "employee"
         else:
             st.error("Wrong password")
